@@ -1,0 +1,8 @@
+#!python
+from fire import Fire
+from nb_generator import NotebookGenerator
+
+
+@Fire
+def main(filename, **kwargs):
+    return NotebookGenerator(filename, **kwargs)
